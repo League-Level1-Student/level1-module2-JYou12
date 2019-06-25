@@ -7,10 +7,10 @@ public static void main(String[] args) {
 	
 	TeaBag teaBag = new TeaBag("mint");
 	Cup cup = new Cup();
-	Kettle kettle = new Kettle();	
+	Kettle kettle = new Kettle();
 	
-	
-	cup.makeTea(teaBag, water);
+	kettle.boil();	
+	cup.makeTea(teaBag, kettle.getWater());
 	
 }
 }
