@@ -11,14 +11,12 @@ public class TeaParty {
 
 	public TeaParty() {
 
-
-
 	}
 
 	public String welcome(String name, boolean isWoman, boolean isKnighted) {
 
 		greeting = "";
-		if (name.isEmpty() == true){
+		if (name == null){
 			greeting = "";	
 		}else if (isKnighted == true && isWoman == true) {
 			greeting += "Hello Lady " + name;
